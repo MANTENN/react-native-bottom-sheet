@@ -1,6 +1,12 @@
 # Changelog
 
-## [v4.3.1](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.0...v4.3.1)
+## [v4.3.2-alpha.0](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.1...v4.3.2-alpha.0)
+
+#### Improvements
+
+- refactor: updated ReText view for web ([493eecd](https://github.com/gorhom/react-native-bottom-sheet/commit/493eecdd80408bd003af370aad23883670493b8d)).
+
+## [v4.3.1](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.0...v4.3.1) - 2022-05-24
 
 #### Improvements
 
