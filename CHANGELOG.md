@@ -1,10 +1,14 @@
 # Changelog
 
-## [v4.3.2-alpha.1](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.1...v4.3.2-alpha.1)
+## [v4.3.2-alpha.2](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.1...v4.3.2-alpha.2)
 
 #### Improvements
 
 - refactor: updated ReText view for web ([493eecd](https://github.com/gorhom/react-native-bottom-sheet/commit/493eecdd80408bd003af370aad23883670493b8d)).
+
+#### Fixes
+
+- fix: remove debug view from bottom sheet ([be157c8](https://github.com/gorhom/react-native-bottom-sheet/commit/be157c88b1739b0885343cf035b4df7373f47275)).
 
 ## [v4.3.1](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.0...v4.3.1) - 2022-05-24
 
