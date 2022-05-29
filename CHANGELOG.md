@@ -1,6 +1,6 @@
 # Changelog
 
-## [v4.3.2-alpha.0](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.1...v4.3.2-alpha.0)
+## [v4.3.2-alpha.1](https://github.com/gorhom/react-native-bottom-sheet/compare/v4.3.1...v4.3.2-alpha.1)
 
 #### Improvements
 
