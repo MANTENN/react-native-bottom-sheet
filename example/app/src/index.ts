@@ -1,4 +1,5 @@
 export { App } from './App';
+export { Dev } from './Dev';
 export { default as ModalBackdropExample } from './screens/modal/BackdropExample';
 export { withModalProvider } from './screens/modal/withModalProvider';
 export { Button } from './components/button';

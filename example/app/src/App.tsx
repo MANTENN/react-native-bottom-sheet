@@ -12,9 +12,10 @@ const author = {
 
 interface AppProps {
   screens?: any[];
+  initialScreen?: string;
 }
 
-export const App = ({ screens: providedScreens }: AppProps) => {
+export const App = ({ screens: providedScreens, initialScreen }: AppProps) => {
   const screens = useMemo(
     () => [...defaultScreens, ...(providedScreens ? providedScreens : [])],
     [providedScreens]
@@ -23,6 +24,7 @@ export const App = ({ screens: providedScreens }: AppProps) => {
     <GestureHandlerRootView style={styles.container}>
       <ShowcaseApp
         name="Bottom Sheet"
+        initialScreen={initialScreen}
         description={description}
         version={version}
         author={author}

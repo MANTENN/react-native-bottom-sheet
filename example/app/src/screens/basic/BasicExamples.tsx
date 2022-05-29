@@ -10,6 +10,8 @@ interface ExampleScreenProps {
   count?: number;
 }
 
+const snapPoints = ['25%', '50%'];
+
 const createExampleScreen = ({ type, count = 25 }: ExampleScreenProps) =>
   memo(() => {
     //#region state
@@ -24,7 +26,6 @@ const createExampleScreen = ({ type, count = 25 }: ExampleScreenProps) =>
     //#endregion
 
     //#region variables
-    const snapPoints = useMemo(() => ['25%', '50%', '90%'], []);
     const enableContentPanningGestureButtonText = useMemo(
       () =>
         enableContentPanningGesture
@@ -143,5 +144,5 @@ export const SectionListExampleScreen = createExampleScreen({
 export const ViewExampleScreen = createExampleScreen({
   title: 'Title',
   type: 'View',
-  count: 8,
+  count: 4,
 });

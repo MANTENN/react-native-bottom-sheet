@@ -41,7 +41,7 @@ import BottomSheetHandleContainer from '../bottomSheetHandleContainer';
 import BottomSheetBackgroundContainer from '../bottomSheetBackgroundContainer';
 import BottomSheetFooterContainer from '../bottomSheetFooterContainer/BottomSheetFooterContainer';
 import BottomSheetDraggableView from '../bottomSheetDraggableView';
-// import BottomSheetDebugView from '../bottomSheetDebugView';
+import BottomSheetDebugView from '../bottomSheetDebugView';
 import {
   ANIMATION_STATE,
   KEYBOARD_STATE,
@@ -707,6 +707,7 @@ const BottomSheetComponent = forwardRef<BottomSheet, BottomSheetProps>(
             currentPosition: animatedPosition.value,
             position,
             velocity,
+            source,
           },
         });
 
@@ -1647,19 +1648,20 @@ const BottomSheetComponent = forwardRef<BottomSheet, BottomSheetProps>(
                   handleIndicatorStyle={_providedHandleIndicatorStyle}
                 />
               </Animated.View>
-              {/* <BottomSheetDebugView
+              <BottomSheetDebugView
                 values={{
                   // topInset,
                   // bottomInset,
                   animatedSheetState,
                   animatedScrollableState,
-                  animatedScrollableOverrideState,
+                  // animatedScrollableOverrideState,
                   // isScrollableRefreshable,
-                  // animatedScrollableContentOffsetY,
+                  animatedScrollableContentOffsetY,
                   // keyboardState,
-                  // animatedIndex,
-                  // animatedCurrentIndex,
-                  // animatedPosition,
+                  animatedIndex,
+                  animatedCurrentIndex,
+                  animatedContentGestureState,
+                  animatedPosition,
                   // animatedContainerHeight,
                   // animatedSheetHeight,
                   // animatedHandleHeight,
@@ -1669,7 +1671,7 @@ const BottomSheetComponent = forwardRef<BottomSheet, BottomSheetProps>(
                   // isContentHeightFixed,
                   // isInTemporaryPosition,
                 }}
-              /> */}
+              />
             </BottomSheetContainer>
           </BottomSheetGestureHandlersProvider>
         </BottomSheetInternalProvider>
